@@ -15,7 +15,6 @@ class ToyForm extends Component {
  }
   handleSubmit = (event) => {
     event.preventDefault()
-    debugger
     let newToy = {...this.state}
     this.props.addToy(newToy)
 

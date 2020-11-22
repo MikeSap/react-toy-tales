@@ -67,14 +67,17 @@ class App extends React.Component{
   }
      
   donateToy = (toyId) => {
-      
       const reqObj = {
         method: 'DELETE'
       }
   
       fetch(`http://localhost:3000/toys/${toyId}`, reqObj)
       .then(resp => resp.json())
-      .then (console.log)
+      .then (alert("Toy has been deleted."))
+
+      this.setState({
+        toys: this.state.toys.filter(toy => toy.id !== toyId)
+      })
   }
   
   
