@@ -38,13 +38,14 @@ class App extends React.Component{
   }
 
 
-
   handleClick = () => {
     let newBoolean = !this.state.display
     this.setState({
       display: newBoolean
     })
   }
+
+
   addToy = (newToy) =>{
 
     const reqObj = {

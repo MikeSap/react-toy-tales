@@ -11,6 +11,24 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/91cmCZxG1hL._AC_SL1500_.jpg",
       "likes": 0,
       "id": 4
+    },
+    {
+      "name": "Juniper",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91cmCZxG1hL._AC_SL1500_.jpg",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "name": "Baby Boi",
+      "image": "https://imgur.com/LLI1w4X",
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "name": "Baby Boi",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91cmCZxG1hL._AC_SL1500_.jpg",
+      "likes": 0,
+      "id": 7
     }
   ]
 }

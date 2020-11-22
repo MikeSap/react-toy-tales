@@ -1,10 +1,7 @@
 import React from 'react';
-import ToyCard from './ToyCard'
+import ToyCard from './ToyCard'  
 
-
-  
-
-  const ToyContainer = (props) => {
+const ToyContainer = (props) => {
 
     const toyMap = (toys) => {
       return toys.map(toy => {
