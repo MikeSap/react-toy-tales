@@ -62,7 +62,8 @@ class App extends React.Component{
     .then(updatedToy => {
       let updatedToys = [...this.state.toys, updatedToy]
       this.setState({
-        toys: updatedToys
+        toys: updatedToys,
+        display: false
       })
     })
   }

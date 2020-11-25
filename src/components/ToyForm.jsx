@@ -13,11 +13,16 @@ class ToyForm extends Component {
      [event.target.name] : event.target.value
    })
  }
-  handleSubmit = (event) => {
+  
+ handleSubmit = (event) => {
     event.preventDefault()
     let newToy = {...this.state}
+    this.setState({
+      name: "",
+      image:"",
+      likes: 0
+    })
     this.props.addToy(newToy)
-
   }
 
   render() {
@@ -25,9 +30,9 @@ class ToyForm extends Component {
       <div className="container">
         <form className="add-toy-form" onSubmit={this.handleSubmit}>
           <h3>Create a toy!</h3>
-          <input onChange = {this.handleChange} type="text" name="name" placeholder="Enter a toy's name..." className="input-text"/>
+          <input onChange = {this.handleChange} type="text" value={this.state.name} name="name" placeholder="Enter a toy's name..." className="input-text"/>
           <br/>
-          <input onChange = {this.handleChange} type="text" name="image" placeholder="Enter a toy's image URL..." className="input-text"/>
+          <input onChange = {this.handleChange} type="text" value={this.state.image} name="image" placeholder="Enter a toy's image URL..." className="input-text"/>
           <br/>
           <input type="submit" name="submit" value="Create New Toy" className="submit"/>
         </form>
